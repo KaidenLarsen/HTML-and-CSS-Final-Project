@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<htlm lang="en">
+    <head>
+        <title>Fake Groceries</title>
+        <link rel="shortcut icon" href="media/favicon.ico?v=2" type="image/x-icon"/>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Your one stop shop for all of your fake grocery needs.">
+        <meta name="keywords" content="Grocerys, Grocery, Egg, Bread, Apples, Milk, Rice Cake, Chicken, Tap Water, Bagels, Cheese, Cabbage, Corncob, Spaghetti, Reviews">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic%7CInconsolata:400,700%7CIBM+Plex+Mono:regular,600%7CRoboto+Mono:regular,500" relation="stylesheet" media="all">
+        <link href="css/index.css" rel="stylesheet" media="all">
+        <link href="css/print.css" rel="stylesheet" media="print">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://kit.fontawesome.com/7413e48387.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+    <div class="header">
+        <header>
+            <div class="container">
+                <div class="navbar">
+                    <div class="logo" style="margin-top: -5px;">
+                        <a href="index.html"><img src="media/FreeGroceriesLogo.png" alt="Our Fake Logo" width="125px"></a>
+                    </div>
+                    <nav>
+                        <ul id="MenuItems">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="products.html">Products</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="account.html">Account</a></li>
+                            
+                        </ul>
+                    </nav>
+                    <a href="cart.html" class="basket-icon"><i class="fa-solid fa-basket-shopping" style="font-size: 150%; color: white;"></i></a>
+                    <i class="menu-icon" onclick="menutoggle()"><i class="fa-solid fa-bars" style="color: white; font-size: 150%;"></i></i>
+                </div>
+                <section class="row" id="ExploreNow">
+                        <div class="col-2">
+                            <h1>Your one-stop shop for<br>fake grocerys!</h1>
+                            <article>Are you tired of buying REAL food?<br> Do you sometimes feel the urge to waste your money?<br> Well if so, you're in the right place!</article>
+                            <a href="#FeaturedProducts" class="btn">Explore Now &nbsp;&nbsp;<i class="fa-solid fa-arrow-right-long"></i></a>
+                        </div>
+                        <div class="col-2">
+                            <img src="media/Groceries-Transparent-Images-PNG.png" alt="grocery background">
+                        </div>
+                </section>
+            </div>
+        </header>
+    </div>
+
+    <!--Featured Items || Aspect ratio 9:16-->
+
+    <div class="categories">
+        <div class="small-container">
+            <section class="row">
+                <div class="col-3">
+                    <img src="media/grocery bag.jpg" alt="grocery bag">
+                </div>
+                <div class="col-3">
+                    <img src="media/milk and cookies resized.jpg" alt="milk and cookies">
+                </div>
+                <div class="col-3">
+                    <img src="media/bread.jpg" alt="bread">
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!--Featured products || Aspect ratio 9:16-->
+    <!--
+        Full star: <i class="fa-solid fa-star"></i>
+        Empty Star: <i class="fa-regular fa-star"></i>
+        Half Star: <i class="fa-solid fa-star-half-stroke"></i>
+    -->
+    <div class="small-container">
+        <h2 class="title" id="FeaturedProducts">Featured Products</h2>
+        <section class="row">
+            <div class="col-4">
+                <a href="product-details-cheese.html"><img src="media/cheese.jpg" alt="Cheese"></a>
+                <h4>Cheese</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p>$19.99</p>
+            </div>
+            <div class="col-4">
+                <a href="product-details-eggs.html"><img src="media/eggs.jpg" alt="eggs"></a>
+                <h4>Eggs</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>$39.99</p>
+            </div>
+            <div class="col-4">
+                <a href="product-details-chicken.html"><img src="media/live chicken.jpg" alt="chicken"></a>
+                <h4>Live Chicken</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p>$9.99</p>
+            </div>
+            <div class="col-4">
+                <a href="product-details-tap-water.html"><img src="media/tap water.jpg" alt="tap water"></a>
+                <h4>Tap Water</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>$4.99</p>
+            </div>
+        </section>
+
+
+        <h2 class="title">Latest Products</h2>
+        <section class="row">
+            <div class="col-4">
+                <img src="media/bagels.jpg" alt="Bagels">
+                <h4>Bagels</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p>$5.99</p>
+            </div>
+            <div class="col-4">
+                <img src="media/listBread.jpg" alt="bread">
+                <h4>Half a Loaf of Bread</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>$2.99</p>
+            </div>
+            <div class="col-4">
+                <img src="media/glassOfMilk.jpg" alt="glass of milk">
+                <h4>Glass of Milk</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>$9.99</p>
+            </div>
+            <div class="col-4">
+                <img src="media/cabbage.jpg" alt="cabbage">
+                <h4>Cabbage</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>$0.99</p>
+            </div>
+
+
+            <div class="col-4">
+                <img src="media/poached egg.jpg" alt="poached egg">
+                <h4>1 (one)&nbsp;Poached Egg</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>$2.99</p>
+            </div>
+            <div class="col-4">
+                <img src="media/corncob.jpg" alt="corbcob">
+                <h4>Corncob</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>$1.99</p>
+            </div>
+            <div class="col-4">
+                <img src="media/grocerys.jpg" alt="grocerys">
+                <h4>Grocery Mystery Box</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>$79.99</p>
+            </div>
+            <div class="col-4">
+                <img src="media/spaghetti.jpg" alt="spaghetti">
+                <h4>Spaghetti</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p>$9.99</p>
+            </div>
+        </section>
+    </div>
+
+    <!------------ Offer ------------>
+    <div class="offer">
+        <div class="small-container">
+            <section class="row">
+                <div class="col-2">
+                    <img src="media/crispy sandwich oval.jpg" alt="Rice Cake Sandwich" class="offer-img">
+                </div>
+                <div class="col-2" style="padding-left: 10%;">
+                    <p>A FakeGrocerys Exclusive</p>
+                    <h1>Rice Cake Sandwich</h1>
+                    <small>FakeGrocerys is thrilled to offer you this new breakthough in sandwich technology. 4 (four) slices of Oscar Meijer's ham topped with a slice of white cheese between two rice cakes.<br></small>
+                    <a href="" class="btn">Buy Now &nbsp;&nbsp;<i class="fa-solid fa-arrow-right-long"></i></a>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!----------- testimonials ---------->
+    <div class="testimonial">
+        <div class="small-container">
+            <section class="row">
+                <div class="col-3">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <p>Poached egg was alright.</p>
+                    <i class="fa-solid fa-quote-right"></i><br>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <img src="media/fakePerson3.jpg" alt="Review Image">
+                    <h3>Joe S</h3>
+                </div>
+                <div class="col-3">
+                <i class="fa-solid fa-quote-left"></i>
+                <p>This has been the worst shopping experience of my life...</p>
+                <i class="fa-solid fa-quote-right"></i><br>
+                <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <img src="media/fakePerson1.jpg" alt="Review Image">
+                    <h3>Mike D</h3>
+                </div>
+
+                <div class="col-3">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <p>Is this a legal business???</p>
+                    <i class="fa-solid fa-quote-right"></i><br>
+                    <div class="rating">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>    
+                    <img src="media/fakePerson2.jpg" alt="Review Image">
+                    <h3>Sarah L</h3>
+                </div>
+            </section>        
+        </div>
+    </div>
+
+
+    <!----------footer---------->
+<footer>
+    <div class="footer">
+        <div class="container">
+            <section class="row">
+                <!---Icon bar-->
+                <div class="footer-icon-bar-col">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li><a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="https://www.twitter.com"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="https://www.pinterest.com"><i class="fa-brands fa-pinterest"></i></a></li>
+                        <li><a href="https://www.youtube.com"><i class="fa-brands fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </section>
+            <hr><p class="copyright">&copy; 2022 - Kaiden Larsen <a href="mailto: kaidenlarsen555@gmail.com">kaidenlarsen555@gmail.com</a></p>
+        </div>
+    </div>
+</footer>
+
+
+<!----Toggle Menu JS----->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        var ExploreNow = document.getElementById("ExploreNow");
+        MenuItems.style.maxHeight = "0";
+        MenuItems.style.marginTop = "-300px";
+        //MenuItems.style.display = "none";
+
+        //cant get it to look exactly how I would like but it's fine
+        function menutoggle() {
+            if(MenuItems.style.marginTop == "-300px") {
+                MenuItems.style.maxHeight = "200px";
+                //MenuItems.style.display = "block";
+                MenuItems.style.marginTop = "0px";
+                ExploreNow.style.marginTop = "200px";
+                
+            }
+            else {
+                //MenuItems.style.display = "none";
+                MenuItems.style.marginTop = "-300px";
+                ExploreNow.style.marginTop = "0";
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+        
+        /*      //overlay menu toggle
+        function menutoggle() {
+            if(MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            } 
+            else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+        */  
+    </script>
+
+    </body>
+</htlm>

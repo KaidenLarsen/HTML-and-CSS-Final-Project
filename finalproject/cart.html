@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<htlm lang="en">
+    <head>
+        <title>Cart - FakeGroceries</title>
+        <link rel="shortcut icon" href="media/favicon.ico?v=2" type="image/x-icon"/>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Your one stop shop for all of your fake grocery needs.">
+        <meta name="keywords" content="Grocerys, Grocery, Egg, Bread, Apples, Milk, Rice Cake, Chicken, Tap Water, Bagels, Cheese, Cabbage, Corncob, Spaghetti, Reviews">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic%7CInconsolata:400,700%7CIBM+Plex+Mono:regular,600%7CRoboto+Mono:regular,500" relation="stylesheet" media="all">
+        <link href="css/index.css" rel="stylesheet" media="all">
+        <link href="css/print.css" rel="stylesheet" media="print">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://kit.fontawesome.com/7413e48387.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="navbar">
+                    <div class="logo" style="margin-top: -5px;">
+                        <a href="index.html"><img src="media/FreeGroceriesLogo.png" alt="Our Fake Logo" width="125px"></a>
+                    </div>
+                    <nav>
+                        <ul id="MenuItems">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="products.html">Products</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="account.html">Account</a></li>
+                        </ul>
+                    </nav>
+                    <a href="cart.html" class="basket-icon"><i class="fa-solid fa-basket-shopping" style="font-size: 150%; color: #555;"></i></a>
+                    <i class="menu-icon" onclick="menutoggle()"><i class="fa-solid fa-bars" style="color: #555; font-size: 150%;"></i></i>
+                </div>
+            </div>
+        </header>
+
+    <!------------Cart Item Details---------->
+
+    <div class="small-container cart-page">
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <a href="product-details-tap-water.html"><img src="media/tap water-square.jpg"></a>
+                        <div>
+                            <p>Tap Water</p>
+                            <small>$4.99</small>
+                            <br>
+                            <a href="" style="color: #555;">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>$4.99</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <a href="product-details-eggs.html"><img src="media/eggs-square.jpg"></a>
+                        <div>
+                            <p>Eggs</p>
+                            <small>$39.99</small>
+                            <br>
+                            <a href="" style="color: #555;">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>$39.99</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <a href="product-details-chicken.html"><img src="media/live chicken-square.jpg"></a>
+                        <div>
+                            <p>Live Chicken</p>
+                            <small>$9.99</small>
+                            <br>
+                            <a href="" style="color: #555;">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>$9.99</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <a href="product-details-cheese.html"><img src="media/cheese-square.jpg"></a>
+                        <div>
+                            <p>Cheese</p>
+                            <small>$19.99</small>
+                            <br>
+                            <a href="" style="color: #555;">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>$19.99</td>
+            </tr>
+        </table>
+
+        <div class="total-price">
+
+            <table>
+                <tr>
+                    <td>Subtotal</td>
+                    <td>$74.96</td>
+                </tr>
+                <tr>
+                    <td>Tax</td>
+                    <td>$9.00</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>$83.96</td>
+                </tr>
+            </table>
+
+        </div>
+
+
+    </div>
+
+
+    <!----------footer---------->
+<footer>
+    <div class="footer">
+        <div class="container">
+            <section class="row">
+                <!---Icon bar-->
+                <div class="footer-icon-bar-col">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li><a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="https://www.twitter.com"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="https://www.pinterest.com"><i class="fa-brands fa-pinterest"></i></a></li>
+                        <li><a href="https://www.youtube.com"><i class="fa-brands fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </section>
+            <hr><p class="copyright">&copy; 2022 - Kaiden Larsen <a href="mailto: kaidenlarsen555@gmail.com">kaidenlarsen555@gmail.com</a></p>
+        </div>
+    </div>
+</footer>
+
+
+<!----Toggle Menu JS----->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        var ExploreNow = document.getElementById("ExploreNow");
+        MenuItems.style.maxHeight = "0";
+        MenuItems.style.marginTop = "-300px";
+        //MenuItems.style.display = "none";
+
+        //cant get it to look exactly how I would like but it's fine
+        function menutoggle() {
+            if(MenuItems.style.marginTop == "-300px") {
+                MenuItems.style.maxHeight = "200px";
+                //MenuItems.style.display = "block";
+                MenuItems.style.marginTop = "0px";
+                ExploreNow.style.marginTop = "200px";
+                
+            }
+            else {
+                //MenuItems.style.display = "none";
+                MenuItems.style.marginTop = "-300px";
+                ExploreNow.style.marginTop = "0";
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+        
+        /*      //overlay menu toggle
+        function menutoggle() {
+            if(MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            } 
+            else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+        */  
+    </script>
+
+    </body>
+</htlm>
+
+
+
+
+
+
+
+
